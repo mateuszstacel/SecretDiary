@@ -1,9 +1,14 @@
 require 'SercretDiary'
 
-describe Secret_diary do
 
- it { is_expected.to respond_to :lock }
- it { is_expected.to respond_to :unlock }
+describe Acces do
+  it { is_expected.to respond_to :lock }
+  it { is_expected.to respond_to :unlock }
+
+end
+
+describe SecretDiary do
+
  it { is_expected.to respond_to :add_entry }
  it { is_expected.to respond_to :get_entries }
 
